@@ -1,0 +1,76 @@
+
+:root {
+  --lightCyan: hsl(193, 38%, 86%);
+  --neonGreen: hsl(150, 100%, 66%);
+  --grayishBlue: hsl(217, 19%, 38%);
+  --darkGrayishBlue: hsl(217, 19%, 24%);
+  --darkBlue: hsl(218, 23%, 16%);
+}
+
+body {
+  background-color: var(--darkBlue);
+  color: var(--lightCyan);
+  font-family: 'Manrope', sans-serif;
+}
+
+main{
+  text-align: center;
+  background-color: var(--darkGrayishBlue);
+  border-radius: 1rem;
+  margin: 7rem 1rem;
+  top: 50%;
+}
+
+.advice {
+  position: relative;
+  padding: 3rem 2rem 4rem;
+}
+
+h4 {
+  color: var(--neonGreen);
+  text-transform: uppercase;
+  letter-spacing: 0.37rem;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.divider {
+  width: 100%;
+}
+
+.img-dice {
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 90%;
+  padding: 1rem;
+  background-color: var(--neonGreen);
+}
+
+.img-dice:hover {
+  box-shadow: 0 0 2.5rem var(--neonGreen);
+}
+
+@media (min-width: 535px) {
+  main{
+    width: 30rem;
+    margin: 7rem auto;
+  }
+
+  .divider {
+    content: url("../images/pattern-divider-desktop.svg")
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
